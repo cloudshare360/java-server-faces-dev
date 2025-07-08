@@ -8,6 +8,7 @@
       "installMaven": true,
       "installAnt": true,
       "installGroovt": true
-    }
+    },
+    "ghcr.io/devcontainers-extra/features/tomcat-sdkman:2": {}
   }
 }
