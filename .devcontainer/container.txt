@@ -1,0 +1,39 @@
+{
+  "name": "Java",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/java:1-21",
+  "features": {
+   "ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"mavenVersion": "3.8.6",
+			"installGradle": "false"
+		}
+    "ghcr.io/devcontainers-extra/features/tomcat-sdkman:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "georgewfraser.vscode-javac",
+        "gabrielbb.vscode-lombok",
+        "pivotal-labs.vscode-spring-boot",
+        "vscjava.vscode-maven",
+        "gradle-lsp.gradle-language-support"
+      ],
+      "settings": {
+        "java.configuration.runtimes": [
+          {
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/temurin-17-jdk"
+          },
+          {
+            "name": "JavaSE-11",
+            "path": "/usr/lib/jvm/temurin-11-jdk",
+            "default": true
+          }
+        ]
+      }
+    }
+  }
+}

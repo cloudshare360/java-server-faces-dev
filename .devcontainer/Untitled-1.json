@@ -4,35 +4,14 @@
   "image": "mcr.microsoft.com/devcontainers/java:1-21",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
+      "version": "8",
+      "additionalVersions": "11,17,21",
       "installGradle": true,
       "installMaven": true,
       "installAnt": true,
-      "installGroovy": true,
-      "version": "17",
-      "jdkDistro": "ms",
-      "gradleVersion": "latest",
-      "mavenVersion": "latest",
-      "antVersion": "latest",
-      "groovyVersion": "latest"
+      "installGroovt": true
     },
-    "ghcr.io/devcontainers-extra/features/tomcat-sdkman:2": {
-      "version": "latest",
-      "jdkVersion": "latest",
-      "jdkDistro": "ms"
-    },
-    "ghcr.io/devcontainers-extra/features/ant-sdkman:2": {
-      "version": "latest",
-      "jdkVersion": "17",
-      "jdkDistro": "ms"
-    },
-    "ghcr.io/devcontainers-extra/features/mackup:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers-extra/features/maven-sdkman:2": {
-      "version": "latest",
-      "jdkVersion": "latest",
-      "jdkDistro": "ms"
-    }
+    "ghcr.io/devcontainers-extra/features/tomcat-sdkman:2": {}
   },
   "customizations": {
     "vscode": {
